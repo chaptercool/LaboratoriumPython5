@@ -18,6 +18,7 @@ for k in L:
 print(D)
 
 L = ["name", "age"]
+dict2 ={}
 # for k in L:
 #     if k in sample_dict.keys:
 #         sample_dict.pop(k)
@@ -32,3 +33,8 @@ for k in sample_dict.values():
         break
     else:
         print('Nie istnieje')
+
+dict2['location'] = dict2['city']
+del dict2['city']
+
+print(dict2)
