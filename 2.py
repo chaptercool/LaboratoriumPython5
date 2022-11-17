@@ -22,6 +22,13 @@ L = ["name", "age"]
 #     if k in sample_dict.keys:
 #         sample_dict.pop(k)
 
-for k in L:
-    sample_dict.pop(k, None)
-print(sample_dict)
+# for k in L:
+#     sample_dict.pop(k, None)
+# print(sample_dict)
+
+for k in sample_dict.values():
+    if k == "Jones":
+        print("Istnieje")
+        break
+    else:
+        print('Nie istnieje')
